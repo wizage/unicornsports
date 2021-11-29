@@ -26,7 +26,7 @@ class Channel extends Component {
         const input = {
             id: name,
         };
-        /* Location 8 */
+        /* Location 9 */
     }
 
     tags = () => {
