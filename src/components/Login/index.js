@@ -5,10 +5,9 @@ import { onAuthUIStateChange } from '@aws-amplify/ui-components';
 const Login = (props) => {
 
   /* Location 3 */
-
+  /* Location 2  - Replace the return function below!*/
   return (
-    /* Location 2 */
-  <div>Login is not ready yet</div>
+    <div>Login is not ready yet</div>
   );
 }
 
