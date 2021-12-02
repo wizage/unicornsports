@@ -1,5 +1,34 @@
-.formHolder {
-  margin-left:33%;
-  width:33%;
-  margin-top: 10px;
+@media (max-width:768px){
+  .formHolder {
+    margin-left:10px;
+    margin-right:10px;
+    margin-top: 10px;
+  }
+}
+@media (min-width:769px){
+  .formHolder {
+    margin-left:33%;
+    width:33%;
+    margin-top: 10px;
+  }
+}
+
+.adminPage {
+  background:linear-gradient(0deg,#f90,#ffc300);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+}
+.rs-form-help-text{
+  color:black;
+}
+
+.rs-form-vertical{
+  font-size: 16px;
+}
+
+.rs-divider-horizontal.rs-divider-with-text::after, .rs-divider-horizontal.rs-divider-with-text::before {
+  border-top: 1px solid black;
 }

@@ -1,24 +1,95 @@
-.videoPlayer {
-  margin: 10px 15vw;
+@media (max-width:768px){
+  .videoPlayer {
+    margin: 0 0 10px 0;
+  }
+  .titleDesktop{
+    visibility: hidden;
+    height: 0;
+  }
+  .titleMobile {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    overflow-y: hidden;
+  }
+  .avatar {
+    margin-left: 1vw;
+    position: absolute;
+  }
+  .channelName {
+    font-size: 25px;
+    position: absolute;
+    margin-left: 60px;
+  }
+  .viewCount {
+    font-size: 21px;
+    right: 0vw;
+    position: absolute;
+  }
+  .tagGroup {
+    margin-top: 50px;
+    margin-left: 10px;
+    position: absolute;
+  }
+  .desc {
+    font-size: 21px;
+    position: absolute;
+    width: 100vw;
+    margin-top: 80px;
+  }
 }
 
-.channelName {
-  font-size: 25px;
-}
+@media (min-width:769px){
+  .videoPlayer {
+    margin: 10px 15vw;
+  }
+  .titleMobile{
+    visibility: hidden;
+    height: 0;
+  }
 
-.title {
-  font-size: 20px;
-}
+  .titleDesktop {
+    font-size: 30px;
+    margin-left: 15vw;
+  }
 
-.description {
-  font-size: 21px;
-}
+  .avatar {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: absolute;
+  }
+  
+  .channelName {
+    font-size: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
 
-.avatar {
-  margin-top: 15px;
-}
+  .viewCount {
+    font-size: 21px;
+    right: 15vw;
+    position: absolute;
+  }
 
-.viewCount {
-  margin-top: 15px;
-  font-size: 20px;
+  .tagGroup {
+    margin-top: 60px;
+    position: absolute;
+  }
+  
+  .desc {
+    font-size: 21px;
+    position: absolute;
+    width: 70vw;
+    margin-top: 90px;
+  }
+
+}
+.channel {
+  background:linear-gradient(0deg,#f90,#ffc300);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
 }

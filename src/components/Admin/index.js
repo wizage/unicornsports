@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     API, graphqlOperation, Auth
   } from 'aws-amplify';
-import { Form, TagInput, InputGroup, ButtonToolbar, Button, toaster, Notification } from 'rsuite';
+import { Form, TagInput, InputGroup, ButtonToolbar, Button, toaster, Notification, Divider} from 'rsuite';
 import ReloadIcon from '@rsuite/icons/Reload';
 import { createChannel, updateChannel, createStreamKey } from '../../graphql/mutations';
 import NavBar from '../NavBar';
@@ -67,8 +67,9 @@ class ChannelAdmin extends Component {
     render() {
         const { user, item } = this.state;
         return (
-        <div className="">
+        <div className="adminPage">
             <NavBar profile={user.username}/>
+            <Divider>Channel Management</Divider>
             <div className="formHolder">
                 <Form 
                 onChange={formValue=> this.setFormValue(formValue)}

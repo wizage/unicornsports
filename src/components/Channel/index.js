@@ -54,48 +54,35 @@ class Channel extends Component {
         const { item } = this.state;
         const profile = {name:name};
         return (
-        <div className="">
+        <div className="channel">
             <NavBar profile={profile}/>
+            <div className="titleDesktop">
+                {item.title}
+            </div>
             <div className="videoPlayer">
                 {this.drawVideoPlayer()}
-                <FlexboxGrid>
-                    <FlexboxGrid.Item colspan={1}>
-                        <div className="avatar">
-                            <Avatar circle>{name.charAt(0).toUpperCase()}</Avatar>
-                        </div>
-                    </FlexboxGrid.Item>
-                    <FlexboxGrid.Item colspan={6}>
-                        <div className="channelName">
-                            {name}
-                        </div>
-                        <div className="title">
-                            {item.title}
-                        </div>
-                    </FlexboxGrid.Item>
-                    <FlexboxGrid.Item colspan={16}>
-                    </FlexboxGrid.Item>
-                    <FlexboxGrid.Item colspan={1}>
-                        <div className="viewCount">
-                            1000
-                        </div>
-                    </FlexboxGrid.Item>
-                </FlexboxGrid>
-                <TagGroup>
-                    {this.tags()}
-                </TagGroup>
-                <FlexboxGrid>
-                    <FlexboxGrid.Item colspan={12}>
-                        <div className="desc">
-                            {item.description}
-                        </div>
-                    </FlexboxGrid.Item>
-                    <FlexboxGrid.Item colspan={8}>
+                <div className="titleMobile">
+                    {item.title}
+                </div>
+                <div className="avatar">
+                    <Avatar circle>{name.charAt(0).toUpperCase()}</Avatar>
+                </div>
+                <div className="channelName">
+                    {name}
+                </div>
+                <div className="viewCount">
+                    1000
+                </div>
+                <div className="tagGroup">
+                    <TagGroup >
+                        {this.tags()}
+                    </TagGroup>
+                </div>
 
-                    </FlexboxGrid.Item>
-                    <FlexboxGrid.Item colspan={4}>
-
-                    </FlexboxGrid.Item>
-                </FlexboxGrid>
+                <div className="desc">
+                    {item.description}
+                </div>
+                    
             </div>
         </div>
         );
