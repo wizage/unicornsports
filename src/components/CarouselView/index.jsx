@@ -32,7 +32,7 @@ class CarouselView extends Component {
   }
 
   componentDidMount() {
-    const { width } = this.useSizeElement();
+    let { width } = this.useSizeElement();
     const input = {};
     /* Location 14 */
   }
