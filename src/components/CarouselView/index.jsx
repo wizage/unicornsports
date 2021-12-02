@@ -84,6 +84,7 @@ class CarouselView extends Component {
     } = this.state;
     const style = {
       transform: `translate3d(${slideDistance}px, 0, 0)`,
+      width: width,
     };
     const itemHTML = items.map((item) => (
       <Link className="carouselCard" to={`/${item.id}`} aria-label={item.title} key={item.id}><GridCardView item={item} /></Link>
